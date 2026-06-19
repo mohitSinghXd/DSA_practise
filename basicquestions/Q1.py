@@ -15,4 +15,7 @@ def  getdigits(number):
 
 number = int(input("enter your digit  : ")) 
 result = getdigits(number) 
-print(result)
+print(result) 
+
+
+# time complexity = O(log10 n ) because Whenever the input is repeatedly divided by a constant (>1), the time complexity becomes logarithmic. so here in this question we were dividing with 10  , so it becomes log base 10 n 
