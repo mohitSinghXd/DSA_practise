@@ -1,6 +1,8 @@
 #check weather a number is palindrome or not 
 
 def check_palindrome(number):
+    if number < 0 :
+        return False
     num = number  
     result = 0 
     while num != 0 :
