@@ -19,7 +19,7 @@ number = int(input("enter your number : "))
 result = getallfactors(number)
 print(result)
 
-
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 """ 
@@ -29,11 +29,9 @@ def getallfactors(numbers):
     for i in range(0, number + 1):
         if number % i == 0:
             factors_list.append(i) 
-        
-    
     return factors_list
 
-
+    
 number  = int(input("enter your number : "))
 
 result  = getallfactors(number)
@@ -41,9 +39,9 @@ print(result)
 
 """ 
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 """
-
 this is good than brute force but not the most optimal 
 
 def getallfactors(numbers):
