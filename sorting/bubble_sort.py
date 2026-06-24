@@ -24,4 +24,26 @@ bubble_sort(nums)
 | **Space Complexity** | **O(1)**                       |
 
 
+""" 
+
+
+""""
+Optimezed bubble_sort (when array is already sorted then there is no need  execute the loop for all the elements)
+
+
+def bubble_sort(nums):
+    n = len(nums)
+
+    for i in range(n):
+        swapped = False
+
+        for j in range(0, n - i - 1):
+            if nums[j] > nums[j + 1]:
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                swapped = True
+
+        if not swapped:
+            break
+
+
 """
