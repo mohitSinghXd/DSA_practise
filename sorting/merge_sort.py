@@ -31,11 +31,9 @@ def merge_sort(arr):
     right = merge_sort(arr[mid:])
 
     return merge(left, right)
-
-
 arr = [12, 11, 13, 5, 6, 7]
 
-sorted_arr = merge_sort(arr)
+sorted_arr = merge_sort(arr)     
 
 print(sorted_arr) 
 
