@@ -7,12 +7,14 @@ def get_answer(char_array , name):
             freq_dict[ch] += 1 
         else:
             freq_dict[ch]  = 1
-    # now check in array 
+    # now check in array for  
+   
     result= []
     for element in char_array:
         if element in  freq_dict:
             result.append(1)
-        else:
+        else: 
+            
             result.append(0)
     return result
 
