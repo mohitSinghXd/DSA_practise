@@ -30,16 +30,16 @@ class SinglyLinkedList:
 
         print("None")
 
-    # Tumhe ye function complete karna hai
-    def find_middle(self): 
+    def Detect_cycle(self): 
          slow = self.head 
          fast  = self.head
-         while fast is not None and fast.next is not None :
+         while fast and fast.next :
              slow = slow.next 
              fast = fast.next.next
-          
-         return slow
-
+             if slow == fast:
+                 return True
+            
+         return False
 # Driver Code
 ll = SinglyLinkedList()
 
@@ -51,6 +51,6 @@ ll.append(50)
 
 ll.traverse()
 
-# Yahan call karna
-ans = ll.find_middle() 
-print(ans.value)
+
+ans = ll.Detect_cycle()
+print(ans)
